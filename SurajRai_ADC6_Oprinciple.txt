@@ -1,0 +1,8 @@
+O- OPEN/CLOSED PRINCIPLE:
+“Classes should be open for extension but closed for modification"
+                       Open for extensions means that the behaviour of the class can be extended without modidying the class and it can be achieved by Abstraction.
+For e.g.
+       Shipped phones comes with the basic like camera operation,actual calls, text message, etc
+	   But via the app store, you can extend the phone's capabilities to allow you to manage your to do list etc.
+	   Your phone's core system (kernel OS) code are closed for the modification.
+
