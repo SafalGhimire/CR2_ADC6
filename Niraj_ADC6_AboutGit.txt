@@ -1,0 +1,50 @@
+Git Clone:git clone is primarily used to point to an existing repo and
+ make a clone or copy of that repo at in a new directory, at another
+ location. The original repository can be located on the local 
+ filesystem or on remote machine accessible supported protocols.
+ The git clone command copies an existing Git repository. This is sort
+ of like SVN checkout, except the “working copy” is a full-fledged Git
+ sitory—it has its own history, manages its own files, and is a 
+ completely isolated environment from the original repository.
+
+Git Push: git push is most commonly used to publish an upload local 
+ changes to a central repository. After a local repository has been 
+ modified a push is executed to share the modifications with remote team 
+ members.
+
+Git Pull:git fetch and git pull can be thought of as 'download' commands.
+ Once changesets have been moved via a download or upload a git merge may
+ be performed at the destination to integrate the changes.
+
+Merge Conflict:Merge conflicts occur when competing changes are made to 
+ the same line of a file, or when one person edits a file and another 
+ person deletes the same file.To resolve a merge conflict caused by 
+ competing line changes, you must choose which changes to incorporate 
+ from the different branches in a new commit.
+ For example, if you and another person both edited the file 
+ styleguide.md on the same lines in different branches of the same Git 
+ repository, you'll get a merge conflict error when you try to merge 
+ these branches. You must resolve this merge conflict with a new commit 
+ before you can merge these branches.
+
+Git branches:Branching is a feature available in most modern version 
+ control systems. Branching in other VCS's can be an expensive operation 
+ in both time and disk space. In Git, branches are a part of your everyday
+ lopment process. Git branches are effectively a pointer to a snapshot of 
+ changes. When you want to add a new feature or fix a bug—no matter how 
+ big or how small—you spawn a new branch to encapsulate your changes. 
+ This makes it harder for unstable code to get merged into the main code 
+ base, and it gives you the chance to clean up your future's history 
+ before merging it into the main branch.
+
+Git commit:The git commit command will save all staged changes, along 
+ with a brief description from the user, in a “commit” to the local 
+ repository.Commits are at the heart of Git usage. You can think of a 
+ commit as a snapshot of your project, where a new version of that project
+ eated in the current repository. Two important features of commits are:
+ you can recall the commited changes at a later date, or revert the 
+ project to that version.
+ if multiple commits edit different parts of the project, they will not
+ overwrite each other even if the authors of the commit were unaware of 
+ each other. This is one of the benefits of using Git over a tool like 
+ Dropbox or Google Drive.
