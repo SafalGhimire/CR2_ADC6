@@ -1,0 +1,15 @@
+ Interfaces should contain only the necessary methods and not anything
+  else.
+IBirdInterface
+• This interface has many bird behaviors along with fly () method. 
+OstrichClass
+• Say Ostrich class implements the IBirdInterface, it has to implement 
+the fly() method unnecessarily(Ostrich doesn’t fly) 
+  This violates ISP!!! 
+SOLUTION:
+• Split the interface into two different interfaces, INonFlyingBird 
+and IFlyingBird.
+IFlyingBird
+• KingFisher will implements this interface. 
+INonFlyingBird
+• Ostrich class implements this interface.
